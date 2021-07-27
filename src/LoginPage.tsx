@@ -11,7 +11,7 @@ import {
   LinearProgress,
 } from "@material-ui/core";
 
-const Login: FC = (props: any) => {
+const LoginPage: FC = (props: any) => {
   const { currentUser, login } = useContext(AuthContext);
 
   useEffect(() => {
@@ -79,4 +79,4 @@ const Login: FC = (props: any) => {
   );
 };
 
-export default Login;
+export default LoginPage;

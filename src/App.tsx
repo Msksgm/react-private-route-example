@@ -2,7 +2,7 @@ import { FC } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import { AuthProvider } from "./Auth";
-import Login from "./Login";
+import LoginPage from "./LoginPage";
 
 const App: FC = () => {
   return (
@@ -10,7 +10,7 @@ const App: FC = () => {
       <AuthProvider>
         <BrowserRouter>
           <Switch>
-            <Route exact path="/login" component={Login} />
+            <Route exact path="/login" component={LoginPage} />
           </Switch>
         </BrowserRouter>
       </AuthProvider>
