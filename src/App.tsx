@@ -1,6 +1,4 @@
 import { FC } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import Login from "./Login";
