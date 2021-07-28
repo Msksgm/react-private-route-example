@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import { AuthProvider } from "./Auth";
 import LoginPage from "./LoginPage";
+import TopPage from "./TopPage";
+import PublicRoute from "./PublicRoute";
 
 const App: FC = () => {
   return (
@@ -11,6 +13,7 @@ const App: FC = () => {
         <BrowserRouter>
           <Switch>
             <Route exact path="/login" component={LoginPage} />
+            <PublicRoute exact path="/top" component={TopPage} />
           </Switch>
         </BrowserRouter>
       </AuthProvider>
