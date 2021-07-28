@@ -1,6 +1,6 @@
 import { FC, useContext } from "react";
 import { Route, Redirect, RouteProps } from "react-router-dom";
-import { AuthContext } from "./Auth";
+import { AuthContext } from "./lib/Auth";
 
 import Nav from "./organisms/Nav";
 
