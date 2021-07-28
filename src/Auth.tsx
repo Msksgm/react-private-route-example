@@ -34,13 +34,6 @@ const AuthProvider = (props: any) => {
   const [loading, setLoading] = useState<boolean>(true);
 
   const login = async (username: string, password: string) => {
-    // const { data } = await axios.post(
-    //   `${process.env.REACT_APP_API_URL}/login`,
-    //   {
-    //     username: username,
-    //     password: password,
-    //   }
-    // );
     if (username === "hoge@xxxx.com" && password === "hoge") {
       setCurrentUser({ userName: username });
       localStorage.setItem("token", username);
@@ -58,9 +51,6 @@ const AuthProvider = (props: any) => {
   const isSignedIn = async () => {
     if (localStorage.getItem("token")) {
       try {
-        // const { data } = await axios.get(
-        //   `${process.env.REACT_APP_API_URL}/user/me`
-        // );
         setCurrentUser({ userName: localStorage.getItem("token") });
       } catch (err) {
         await setCurrentUser(undefined);
