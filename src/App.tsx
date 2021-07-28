@@ -5,7 +5,7 @@ import { AuthProvider } from "./lib/Auth";
 import LoginPage from "./pages/LoginPage";
 import TopPage from "./pages/TopPage";
 import PublicRoute from "./PublicRoute";
-import PrivateRoute from "./PrivateRoute";
+import PrivateRoute from "./lib/PrivateRoute";
 import PrivatePage from "./pages/PrivatePage";
 
 const App: FC = () => {
