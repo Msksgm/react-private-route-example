@@ -18,7 +18,11 @@ const PrivateRoute: FC<RouteProps> = ({ component, ...rest }) => {
       return <Redirect to="/login" />;
     }
   } else {
-    return <></>;
+    return (
+      <>
+        <Nav />
+      </>
+    );
   }
 };
 
