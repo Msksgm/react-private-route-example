@@ -1,7 +1,7 @@
 import { Field, Form, Formik } from "formik";
 import { TextField } from "formik-material-ui";
 import { Fragment, FC, useContext, useEffect } from "react";
-import { AuthContext } from "./Auth";
+import { AuthContext } from "../Auth";
 import { useHistory } from "react-router-dom";
 
 import {

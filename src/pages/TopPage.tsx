@@ -1,6 +1,6 @@
 import { FC, useContext } from "react";
 import Container from "@material-ui/core/Container";
-import { AuthContext } from "./Auth";
+import { AuthContext } from "../Auth";
 
 const TopPage: FC = () => {
   const { currentUser } = useContext(AuthContext);
