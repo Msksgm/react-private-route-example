@@ -51,6 +51,7 @@ const AuthProvider = (props: any) => {
   };
 
   const logout = () => {
+    localStorage.removeItem("token");
     setCurrentUser(undefined);
   };
 
