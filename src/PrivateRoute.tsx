@@ -2,7 +2,7 @@ import { FC, useContext } from "react";
 import { Route, Redirect, RouteProps } from "react-router-dom";
 import { AuthContext } from "./Auth";
 
-import Nav from "./Nav";
+import Nav from "./organisms/Nav";
 
 const PrivateRoute: FC<RouteProps> = ({ component, ...rest }) => {
   const { currentUser, loading } = useContext(AuthContext);
