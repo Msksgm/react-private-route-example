@@ -5,6 +5,8 @@ import { AuthProvider } from "./Auth";
 import LoginPage from "./LoginPage";
 import TopPage from "./TopPage";
 import PublicRoute from "./PublicRoute";
+import PrivateRoute from "./PrivateRoute";
+import PrivatePage from "./PrivatePage";
 
 const App: FC = () => {
   return (
@@ -14,6 +16,8 @@ const App: FC = () => {
           <Switch>
             <Route exact path="/login" component={LoginPage} />
             <PublicRoute exact path="/top" component={TopPage} />
+            <PrivateRoute exact path="/private" component={PrivatePage} />
+            <Redirect to="/login" />
           </Switch>
         </BrowserRouter>
       </AuthProvider>
