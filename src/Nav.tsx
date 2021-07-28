@@ -50,6 +50,19 @@ export default function ButtonAppBar() {
           >
             Top
           </Typography>
+          {currentUser ? (
+            <Typography
+              variant="h6"
+              className={classes.title}
+              onClick={async () => {
+                await history.push("/Private");
+              }}
+            >
+              Private
+            </Typography>
+          ) : (
+            <></>
+          )}
 
           {currentUser ? (
             <Button
