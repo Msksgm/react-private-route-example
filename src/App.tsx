@@ -1,12 +1,13 @@
 import { FC } from "react";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-import { AuthProvider } from "./lib/Auth";
 import LoginPage from "./pages/LoginPage";
 import TopPage from "./pages/TopPage";
+import PrivatePage from "./pages/PrivatePage";
+
+import { AuthProvider } from "./lib/Auth";
 import PublicRoute from "./lib/PublicRoute";
 import PrivateRoute from "./lib/PrivateRoute";
-import PrivatePage from "./pages/PrivatePage";
 
 const App: FC = () => {
   return (
