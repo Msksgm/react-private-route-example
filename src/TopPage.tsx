@@ -4,7 +4,6 @@ import { AuthContext } from "./Auth";
 
 const TopPage: FC = () => {
   const { currentUser } = useContext(AuthContext);
-  console.log(currentUser);
   return (
     <Container maxWidth="sm">
       <>
