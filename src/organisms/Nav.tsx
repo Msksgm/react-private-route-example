@@ -55,7 +55,7 @@ export default function ButtonAppBar() {
               variant="h6"
               className={classes.title}
               onClick={async () => {
-                await history.push("/Private");
+                await history.push("/private");
               }}
             >
               Private
